@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/style/register.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+		<title>Job Discovery</title>
+	</head>
+	<body>
+    	<form method="POST" class="register">
+			<h1>Job Discovery</h1>
+			<%- include ('./partials/messages') %>
+    		<input type="name" name="name" placeholder="Entrez votre pseudo">
+    		<input type="email" name="email" placeholder="Entrez une adresse mail"}> 
+    		<label for="secteur">Secteur d'Études</label>
+     		<select name ="secteur">
+                 <option value="" disabled selected hidden>Choisissez...</option>
+                 <option value="College">Collège</option>
+                 <option value="LyceeG">Lycée Général et Technologique</option>
+                 <option value="LyceeP">Lycée Professionnel</option>
+                 <option value="Superieur">Études Supérieures</option>
+                 <option value="Travail">Marché du Travail</option>
+    		</select>
+   			<input type="password" name="password" placeholder="Créez votre mot de passe">
+     		<input type="password" name="password2" placeholder="Confirmez votre mot de passe">
+    		<button type="submit" class="btn btn-primary btn-block">S'enregistrer</button>
+			<p><a href="/users/login" class="seconnecter">Se connecter</a></p>
+		</form>
+		<div class="dyslexia">
+			<button id="dyslexia-toggle" type="button" aria-pressed="false">Mode Dyslexique</button>
+			<script type="text/javascript" src="/script/dyslexia.js"></script>
+		</div>
+	</body> 
+</html>

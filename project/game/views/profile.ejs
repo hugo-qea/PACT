@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/style/profile.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+		<title>Job Discovery</title>
+	</head>
+	<body>
+    	<form method="POST" class="edit">
+			<h1>Job Discovery</h1>
+			<%- include ('./partials/messages') %>
+    		<input type="name" name="newname" placeholder="Nouveau pseudo" >
+            <input type="email" name="oldemail" placeholder="Ancien email" required>
+    		<input type="email" name="newemail" placeholder="Nouvelle adresse mail"> 
+     		<select name ="secteur">
+                 <option value="" selected hidden>Secteur d'Activités</option>
+                 <option value="College">Collège</option>
+                 <option value="LyceeG">Lycée Général et Technologique</option>
+                 <option value="LyceeP">Lycée Professionnel</option>
+                 <option value="Superieur">Études Supérieures</option>
+                 <option value="Travail">Marché du Travail</option>
+    		</select>
+            <input type="password" name="oldpassword" placeholder="Ancien mot de passe pour confirmer les changements" required>
+   			<input type="password" name="newpassword" placeholder="Nouveau mot de passe">
+     		<input type="password" name="newpassword2" placeholder="Confirmez votre nouveau mot de passe">
+    		<button type="submit" class="btn btn-primary btn-block">Enregistrer</button>
+			<p><a href="/dashboard" class="back">Annuler</a></p>
+		</form>
+		<div class="dyslexia">
+			<button id="dyslexia-toggle" type="button" aria-pressed="false">Mode Dyslexique</button>
+			<script type="text/javascript" src="/script/dyslexia.js"></script>
+		</div>
+	</body> 
+</html>

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Titre</title>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        
+    </head>
+
+    <body>
+        <canvas id="renderwindow" width="1000" height="600"></canvas> 
+    </body>
+
+    <script>
+    
+        const canvas = document.getElementById("renderwindow");
+
+        // initialize babylon engine
+        const engine = new BABYLON.Engine(canvas, true, {preserveDrawingBuffer: true, stencil: true});
+
+
+var createScene = function () {
+
+
+engine.enableOfflineSupport = false;
+
+// Scene and Camera
+var scene = new BABYLON.Scene(engine);
+
+var camera1 = new BABYLON.ArcRotateCamera("camera1", Math.PI / 2, Math.PI / 4, 10, new BABYLON.Vector3(0, -5, 0), scene);
+scene.activeCamera = camera1;
+scene.activeCamera.attachControl(canvas, true);
+camera1.lowerRadiusLimit = 1;
+camera1.upperRadiusLimit = 20;
+camera1.wheelDeltaPercentage = 0.01;
+
+// Lights
+var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
+light.intensity = 0.6;
+light.specular = BABYLON.Color3.Black();
+
+var light2 = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(0, -0.5, -1.0), scene);
+light2.position = new BABYLON.Vector3(0, 5, 5);
+
+
+
+// Ground
+var ground = BABYLON.MeshBuilder.CreateGround("ground", { height: 10, width: 10, subdivisions: 2 }, scene);
+
+
+
+// Load character and play animation
+
+BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s/9md7im28m8vsw91/scene.babylon", "scene.babylon", this._scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+    var character = newMeshes[0];
+
+    //Scale the model down        
+    character.scaling.scaleInPlace(0.1);
+
+    //Lock camera on the character 
+    camera1.target = character;
+
+    //Get animation Group
+    const walkAnim = scene.getAnimationGroupByName("Armature|mixamo.com|Layer0");
+
+    //Play the walking animation  
+    walkAnim.start(true, 1.0, walkAnim.from, walkAnim.to, false);
+
+});
+
+return scene;
+}
+// call the createScene function
+        var scene = createScene();
+
+        // run the main render loop
+        engine.runRenderLoop(() => {
+            scene.render();
+        });
+
+        window.addEventListener('resize', function(){
+            engine.resize();
+        });
+
+    </script>
+</html>

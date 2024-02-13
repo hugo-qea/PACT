@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+    		<meta charset="UTF-8">
+			<link rel="stylesheet" href="/style/success.css">
+            <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+			<title>Job Discovery</title>
+  		</head>
+  		<body>
+  			<div class="success">
+				<h1>Job Discovery</h1>
+				<div class="flash-messages"><%- include ('./partials/messages') %></div>
+  				<button class="btn-primary btn-block" onclick="window.location.href = '/dashboard';">Menu Principal</button>
+            </div>
+			<div class="dyslexia">
+				<button id="dyslexia-toggle" type="button" aria-pressed="false">Mode Dyslexique</button>
+				<script type="text/javascript" src="/script/dyslexia.js"></script>
+			</div>
+  		</body>
+	</html>

@@ -1,0 +1,52 @@
+=== Description de l’état de l’art
+ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
+
+// *_Note : 1 page max._*
+
+//Décrivez, en les citant via la bibliographie, les approches/produits
+//ressemblant à votre projet et les différences éventuelles. Illustrez
+//avec des images si besoin. Utilisez des renvois vers votre
+//bibliographie : « comme démontré dans [2], … » 
+
+==== Fiches métier ONISEP
+
+l'ONISEP, service de l'Education nationale dédié à l'orientation des élèves, rend disponible aux élèves des collèges et lycées des fiches métier pour les accompagner dans leur orientation. Ils peuvent y accéder sur le site de l'ONISEP  et de très nombreux emplois y sont représentés. <<RefONISEP>>
+
+Si l'ONISEP se veut complète avec des fiches très détaillées pour tous les environnements de travail possibles, ces dernières ne correspondent plus aux attentes et occupations des collègiens et lycéens d'aujourd'hui. En effet, alors qu'ils sont au quotidien baignés par les réseaux sociaux et les jeux vidéo, la lecture de fiches ne semble pas être une réponse adéquate, à l'inverse de notre jeu vidéo qui s'insère directement dans leurs habitudes. 
+
+==== Cartométiers 
+
+Le jeu de cartes _Cartométiers_ allie activités ludiques et pédagogiques dans le but de faire découvrir des métiers aux joueurs ou d'approfondir leurs connaissances sur certains métiers. <<RefCartométiers>>
+
+Alors que notre jeu pourra être accessible pour un seul joueur, _Cartométiers_ nécessite la participation d'au moins 6 joueurs. De plus, la découverte d'un métier par le biais d'un jeu de cartes ne permet pas de se rendre compte de la journée de travail réellement exercée par un professionnel du secteur. En outre, le support physique empêche une observation directe de la profession qui sera permise par nos vidéos 360.
+
+==== Métiers360
+
+L'entreprise Métiers360 propose des solutions innovantes pour aider jeunes et adultes en recherche d'emploi à découvrir des secteurs qu'ils ne connaissent peu ou pas à l'aide de la réalité virtuelle. Au travers d'un casque VR, les utilisateurs sont ainsi plongés dans un environnement de travail et assistent aux activités des travilleurs. <<RefMétiers360>>
+
+A l'instar de Métiers360, nous souhaitons mettre à profit l'enregistrement 360 pour permettre à nos usagers d'en apprendre plus sur les métiers qui les intéressent en immersion totale. Cependant, notre projet porte une dimension ludique et active portée par le développement du jeu 3D qui est totalement absente des solutions proposées par Métiers360. En effet, l'unique observation de travailleurs s'adonnant à leurs tâches quotidiennes peut rapidement devenir ennuyante pour le spectateur au point d'en perdre son attention, rendant l'expérience peu utile.
+
+==== Projet M2C
+
+_Projet M2C_ était un jeu développé par la Fondation de la Maison de la Chimie et l'Union des Industries Chimiques et publié en 2011 pour palier à la méconnaissance des métiers de la chimie chez les jeunes. Ce _serious game_, jeu sérieux car ayant une finalité pédagogique, permettait au joueur de se plonger dans une enquête lui octroyant la possibilité de découvrir les métiers de la chimie à travers dialogues, textes et mini-jeux. 
+
+Les développeurs de ce jeu suivent la même idée que nous en optant pour la découverte de métiers via le support d'un jeu vidéo. Néanmoins, _Projet M2C_ se joue à 1 seul joueur et donc ne permet pas l'intéraction que nous voulons pour notre jeu avec le multijoueur. De plus, l'enquête est un processus long qui nécessite généralement plusieurs sessions de jeu. Le joueur est donc susceptible de perdre l'intérêt à un certain point de l'enquête à cause de sa longueur alors que notre jeu, prévu pour un usage dans des établissements scolaires, pourra être fini sur un créneau de cours dédié à l'orientation. Enfin, l'absence de documents réels, à l'inverse de nos vidéos 360, réduisent les possibilités d'immersion.
+
+==== Job Simulator
+
+_Job Simulator_ est un jeu vidéo développé uniquement pour une utilisation en réalité virtuelle. Comme son nom l'indique, le joueur incarne un travailleur et éxécute l'ensemble de ses tâches habituelles dans un monde de fiction. En effet, l'action se place au sein d'une dystopie au cours de laquelle les robots ont remplacé les hommes, l'univers est donc fantaisiste. <<RefJobSimulator>>
+
+L'utilisation du casque de réalité virtuelle pour procéder aux tâches de chaque métier est un apport d'immersion certain par rapport à notre production. Cependant, le revers de la médaille est qu'il est difficile et onéreux de se procurer un tel casque, sans compter qu'il est nécessaire d'avoir un ordinateur puissant pour utiliser des jeux en réalité virtuelle. Il serait ainsi difficile de diffuser ce jeu au sein de collèges ou lycées, en opposition avec notre jeu sur navigateur accessible facilement depuis n'importe quel support. De plus, le côté fantaisiste du jeu retire du réalisme et ne rend pas service à l'aspect pédagogique que nous convoitons.
+
+
+//==== Exemples de citations
+//
+//Les références bibliographiques sont regroupées dans le fichier `References.adoc`
+//à la racine du répertoire `rapport`.
+//On peut y faire référence dans toutes les sous parties du document.
+//
+//On peut citer comme exemple l'article de Claude E. Shannon sur la
+//théorie de la communication <<RefShannon>>
+//ou, bien évidement, la vitrine des projets PACT <<VitrinePACT>>.
+//
+//Voir <<TOTO,la référence>> très intéressante elle aussi.

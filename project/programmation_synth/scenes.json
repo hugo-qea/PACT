@@ -1,0 +1,37 @@
+[
+{
+    "tileset" : [
+        {
+            "filename": "exemple.obj",
+            "transform": 1
+        },
+        {
+            "filename": "table.obj",
+            "transform": 1
+        },
+        {
+            "filename": "frigo.obj",
+            "transform": 1
+        }
+    ],
+    "tilemap" : [
+        [0, 2, 1, 0, 0, 0],
+        [0, 2, 1, 1, 0, 0],
+        [0, 2, 2, 0, 1, 0],
+        [0, 0, 1, 0, 0, 1],
+        [0, 2, 1, 0, 0, 1]
+    ],
+    "tasks": [
+        {
+            "hour" : 12.4,
+            "action": "click",
+            "tile": 2
+        },
+        {
+            "hour" : 1.2,
+            "action": "keypress",
+            "tile": 0
+        }
+    ]
+}
+]

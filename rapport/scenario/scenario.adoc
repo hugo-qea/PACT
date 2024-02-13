@@ -1,0 +1,17 @@
+=== Scénarios d’usage
+
+//Mettre ici le scénario d’usage que vous avez construit lors des séances
+//encadrées par les experts SES. Vous pouvez mettre un scénario amélioré
+//(et non celui noté) si vous jugez votre scénario insuffisant pour faire
+//comprendre au jury PACT les différentes étapes d’utilisation de votre
+//produit/service ou si vous avez changé d’idées entre-temps.
+
+==== Première version
+
+Louis, un jeune lycéen en seconde doit réaliser un projet d’orientation professionnelle. Étant issu d’une famille d’artisans, il a uniquement pu effectuer son stage dans une boulangerie de son village. Les ressources qui lui ont été données pour son projet sont : le site Onisep, des vidéos de présentation de métiers, des revues. Désemparé par cet amas d’informations, il lance tant bien que mal ses recherches, il découvre ainsi des métiers inconnus pour un provincial fils d’artisans : Data scientist, ingénieur en cybersécurité, … Cependant, les seules informations dont il dispose sont : la rémunération, le niveau d’étude requis, et un résumé succinct du métier. Grâce à ces informations, Louis peut constituer son projet d’orientation professionnelle. Malgré cela, Louis est déçu, s’il fut enthousiaste de découvrir des métiers tels que Data Scientist, il se demande : « Que fait un Data Scientist de sa journée ? Quel est son quotidien ? ». Avec les données actuelles, ces questions restent en suspens. C’est ainsi qu’il découvre « Job Discovery », un jeu vidéo qui lui permet d’être dans la peau d’un professionnel et ainsi d’expérimenter une journée de travail. Heureux de cette trouvaille, il va enfin pouvoir découvrir le quotidien d’un Data Scientist.
+
+==== Version améliorée
+
+Louis, un jeune lycéen en seconde doit réaliser un projet d’orientation professionnelle. Pour se familiariser avec les différents métiers, il ne dispose que de sites internet qui ne laissent pas clairement transparaître la réalité quotidienne du métier concerné. Les seules informations dont il dispose sont : la rémunération, le niveau d’étude requis, et un résumé succinct du métier. Cela ne suffit absolument pas à décider d’une orientation professionnelle, et il n’a évidemment pas eu l’occasion de faire un stage pour chaque métier qui l’intéresse. Grâce au jeu simulateur de métier, l’immersion dans une journée type est possible. Louis se connecte sur le jeu et sélectionne la simulation « artisan boulanger ». Il doit se déplacer dans la boulangerie et réaliser diverses tâches classiques en boulangerie, comme par exemple pétrir le pain, accueillir les clients, gérer des commandes, diriger une équipe. Il peut même accéder à des vidéos 3D de l’intérieur de la boulangerie, pour observer son environnement de travail, et profiter d’une immersion plus complète. Il peut ensuite tester des journées types d’autres métiers, dans différentes catégories (professions scientifiques, droit etc.). Ces simulations lui permettent d’éliminer certains choix d’orientation, si ce n’est choisir celui qui lui correspond. 
+
+

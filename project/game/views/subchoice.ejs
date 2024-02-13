@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/choice.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="heading">Sélectionner un métier</h1>
+            <input type="text" placeholder="" id="search-box">
+            <div class="image-container">
+				<% const jobs = domains[domain].sub;
+				for(const name in jobs) { %>
+				<a href="../play">
+					<div class="image" data-title="<%= jobs[name].title %>">
+						<img  src="/images/<%= jobs[name].img %>"  alt="<%= jobs[name].title %>">
+						<h3><%= jobs[name].title %></h3>
+					</div>
+				</a>
+				<% } %>
+            </div>
+        </div>
+		<button onclick="window.location.href='javascript:history.back()'" class ="button">Retour</button>
+        <script>
+            let searchBox = document.querySelector('#search-box');
+            let images = document.querySelectorAll('.container .image-container .image');
+            searchBox.oninput = () =>{
+                images.forEach(hide => hide.style.display = 'none');
+                let value = searchBox.value.toLowerCase();
+                images.forEach(filter =>{
+                    let title = filter.getAttribute('data-title').toLowerCase();
+                    if(title.includes(value)){
+                        filter.style.display = 'block';
+                    }
+                    if(searchBox.value == ''){
+                        filter.style.display = 'block';
+                    }
+                });
+            };
+        </script>
+		<div class="dyslexia">
+			<button id="dyslexia-toggle" type="button" aria-pressed="false">Mode Dyslexique</button>
+			<script type="text/javascript" src="/script/dyslexia.js"></script>
+		</div>
+    </body>
+</html>

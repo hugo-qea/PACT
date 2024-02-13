@@ -1,0 +1,127 @@
+= Rapport d’avancement du groupe “3.2”
+PACT groupe 32 (Job Simulator Team)
+ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
+:doctype: book
+:stem: latexmath
+:source-highlighter: coderay
+:toc-title: Table des matières
+:toc: macro
+:sectnums:
+:imagesdir: images
+
+
+// Partie non numérotée
+:sectnums!:
+== Job Discovery Team
+
+=== Membres du groupe
+
+* DIFALLAH Kenza
+* MASSCHELIER Paul-Marie
+* MAZETTE Thibault
+* PRATO Diane
+* QUENIAT Hugo
+* SAMALI Bacem
+
+=== Tuteur
+
+* Giovanna Varni
+
+=== Encadrant génie logiciel
+
+* Jean Claude Dufourd
+
+== Résumé du sujet choisi en français (PAN1)
+
+//*_Note: 15 lignes max_* 
+
+//Décrire votre projet sans le scénariser : De quoi s’agit-il ? En quoi
+//cette idée est compatible avec le thème de PACT ? Qu’est-ce qu’il
+//permettrait de faire de façon générale.
+
+Nous souhaitons créer un jeu vidéo 3D (potentiellement incorporant de la réalité virtuelle sous forme de vidéos 360 auxquelles le joueur peut accéder) qui vise à faire découvrir aux utilisateurs une journée type d’un métier. Le joueur sera immergé dans l’environnement de travail, et pourra effectuer différentes tâches afin de découvrir le quotidien du professionnel. Lors des différentes tâches, il pourra également accéder à des vidéos d’un professionnel qui apporte des informations techniques sur la tâche qui est effectuée (par exemple lors du pétrissage, un boulanger pourrait expliquer en quoi la vitesse de rotation est importante, l’influence de la température sur la pâte, …). Le but est qu’il y ait une interaction et une pratique concrète de l’étudiant dans l’environnement de travail.
+Ce projet est compatible avec le thème PACT sur l’inclusion, en effet un jeune n’aura pas forcément accès aux mêmes connaissances sur différentes professions en fonction de son environnement. Le but de ce projet est donc d’apporter une base commune et neutre d’informations sur tout un éventail de métiers afin de gommer au maximum ce type d’inégalité.
+
+
+== English Summary (PAN1)
+
+//*_Note : 15 lignes max, version anglaise du texte précédent TODO_*
+
+Our goal is to create a 3D video game (it might contain 360 videos the player could watch while playing) which will allow the user to discover the daily routine of a professional. The player will be immersed in a work environment and will be able to perform several tasks in order to learn more about the job. While doing this, he will have the possibility to watch videos of a professional, who will give more technical details (for instance, while kneading, a baker might explain the importance of the rotation speed and the influence of the temperature on the dough). The goal is to create a real interaction, and to allow the student to concretely practice the profession.
+This project is part of the PACT theme « inclusion ». Indeed, a young student won’t have access to the same knowledge on professions depending on his own social environment. The aim of this project is to provide a common and neutral base of information on a whole range of professions in order to erase this type of inequality as much as possible.
+
+
+// *Notes concenant le rapport*
+
+// Les différentes pages du document sont rédigées en utilisant le langage
+// AsciiDoc. Le squelette de rapport contient des exemples avec entre autres:
+
+// * des images,
+// * des liens,
+// * des équations.
+
+// La structure du rapport (parties, sections et la relation avec les
+// différents fichiers) se trouve dans le fichier courant.
+
+// **Prenez le temps** de supprimer le texte de remplissage et les sections non utilisées pour l'instant. Vous pouvez par exemple commenter ces parties non utilisées pour qu'elles n'apparaissent pas dans le document final. En Asciidoc, il suffit de les précéder de deux slashs (`//`).
+
+// en PDF on ne peut pas controler la position de la toc
+// Macros non supportées
+
+ifndef::backend-pdf[]
+== Table des matières
+:toc-title:
+toc::[]
+endif::[]
+
+// On numérote le reste des sections
+:sectnums:
+
+== Étude d’antériorité et justification de la proposition (PAN1)
+
+include::proposition/proposition.adoc[Description de la proposition]
+
+include::proposition/etat-de-l-art.adoc[Description de l’état de l’art]
+
+== Scénarios d’usage (PAN1)
+
+include::scenario/scenario.adoc[Scénarios d’usage]
+
+<<<
+
+== Architecture du projet (PAN1)
+
+include::architecture/schema.adoc[Schéma d’architecture]
+
+include::architecture/interfaces.adoc[Description des interfaces]
+
+include::architecture/sequence.adoc[Diagramme de séquence]
+
+include::architecture/ihm.adoc[Interface utilisateur graphique]
+
+<<<
+
+== Organisation du projet (PAN1)
+
+include::organisation/planification.adoc[Diagramme de planification temporel des tâches]
+
+include::organisation/plan-tests.adoc[Plans de test (PAN2+)]
+
+<<<
+
+[bibliography]
+== Bibliographie (PAN1+)
+
+include::References.adoc[Bibliographie]
+
+<<<
+
+== Annexes
+
+include::annexes/modifications.adoc[Modifications (PAN2+)]
+
+include::annexes/avancement.adoc[Avancement des modules]
+
+include::annexes/moduleX.adoc[Avancement module X]
+
+include::annexes/moduleY.adoc[Avancement module Y]

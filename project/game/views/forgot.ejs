@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/style/login.css">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+		<title>Job Discovery</title>
+	</head>
+	<body>
+		<form method="POST" class="login">
+			<h1>Mot de passe oublié</h1>
+			<div class="flash-messages">
+			<p>Saisissez votre adresse mail afin que nous puissions vous envoyer votre mot de passe.</p>
+			<%- include ('./partials/messages') %></div>
+			<input type="email" name='email' autofocus='true' required="true" placeholder='Email'>
+			<button type="submit" class="btn-primary btn-block">Envoyer</button>
+			<p><a href="/users/login" class='register'>Se connecter</a></p>
+		</form>
+		<div class="dyslexia">
+			<button id="dyslexia-toggle" type="button" aria-pressed="false">Mode Dyslexique</button>
+			<script type="text/javascript" src="/script/dyslexia.js"></script>
+		</div>
+	</body>
+</html>

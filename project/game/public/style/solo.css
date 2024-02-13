@@ -1,0 +1,182 @@
+@font-face {
+	font-family: "OpenDyslexic";
+	src: url("./fonts/OpenDyslexic-Regular.otf");
+}
+body {
+    background: #f29f05;
+    text-align: center;
+    text-rendering: auto;
+    font-size: 17px;
+    line-height: 1.6em;
+    height: 100vh;
+    overflow: hidden;
+    padding: 18%;
+    padding-top: 25vh;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .button {
+    display: inline-block;
+    font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    padding: 0.8em 1.4em;
+    padding-right: 4.7em;
+    background: #D91604;
+    border: none;
+    color: white;
+    transition: 0.2s;
+	text-decoration: none;
+  }
+  .button:before,
+  .button:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    width: 2.8em;
+    content: "\00a0";
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    transition: 0.2s;
+    transform-origin: 50% 60%;
+  }
+  .button:before {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .button:hover {
+    background: #8f0c00;
+  }
+  .button:active,
+  .button:focus {
+    background: #b35503;
+    outline: none;
+  }
+  .button {
+    min-width: 15em;
+  }
+  .arrow {
+    background: #F57100;
+  }
+  .arrow:hover {
+    background: #8a4102;
+  }
+  .arrow:active,
+  .arrow:focus {
+    background: #b90c01;
+  }
+  .arrow:after {
+    content: "\F054";
+  }
+  .arrow:hover:after {
+    -webkit-animation: bounceright 0.3s alternate ease infinite;
+    animation: bounceright 0.3s alternate ease infinite;
+  }
+  .quit {
+    background: #F2E205;
+  }
+  .quit:hover {
+    background: #a39802;
+  }
+  .quit:active,
+  .quit:focus {
+    background: #083b2e;
+  }
+  .quit:after {
+    content: "\2715";
+  }
+  .quit:hover:after {
+    -webkit-animation: wiggle 0.05s alternate ease infinite;
+    animation: wiggle 0.05s alternate ease infinite;
+  }
+  .settings {
+    background: #F5BE00;
+  }
+  .settings:hover {
+    background: #856801;
+  }
+  .settings:active,
+  .settings:focus {
+    background: #963d82;
+  }
+  .settings:after {
+    content: "\2699";
+  }
+  .settings:hover:after {
+    -webkit-animation: none;
+    -webkit-transform: skew(-20deg);
+    animation: none;
+    transform: skew(-20deg);
+    text-indent: 0.1em;
+  }
+  .search:after {
+    content: "\f002";
+  }
+  .search:hover:after {
+    -webkit-animation: none;
+    -webkit-transform: scale(1.4);
+    animation: none;
+    transform: scale(1.4);
+  }
+  @-webkit-keyframes bounceright {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(3px);
+    }
+  }
+  @-webkit-keyframes wiggle {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(30deg);
+    }
+  }
+  @keyframes bounceright {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(3px);
+    }
+  }
+  @keyframes wiggle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(30deg);
+    }
+  }
+  .dyslexia-mode {
+	font-family: "OpenDyslexic";
+}
+
+.dyslexia-mode .button {
+	font-family: "OpenDyslexic";
+}
+
+#dyslexia-toggle {
+	font-family: "OpenDyslexic";
+	padding: 1em;
+	font-size: 8pt;
+	letter-spacing: 0.35ch;
+	float:right;
+	position: absolute;
+	width: 13%;
+	height: 5%;
+	top: 92%;
+	left: 85%;
+}
+
+.dyslexia-mode #dyslexia-toggle {
+  background-color: #115c7d;
+  color: #fff;
+}
+  
